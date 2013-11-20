@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>http://www.messagehandler.net</projectUrl>
+    <id>$id$</id>
+    <title>$title$</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <summary>$description$</summary>
+    <copyright>Copyright 2013 Yves Goeleven</copyright>
+    <tags>messagehandler</tags>
+	<dependencies>
+    </dependencies>
+  </metadata>
+</package>

@@ -5,14 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MessageHandler.SDK")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Messagehandler.SDK")]
+[assembly: AssemblyDescription("The messagehandler SDK, which allows you to build your own handlers")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MessageHandler.SDK")]
+[assembly: AssemblyCompany("www.messagehandler.net")]
+[assembly: AssemblyProduct("Messagehandler.SDK")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -20,7 +18,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f3df9847-5195-48b0-864f-d95576ffe252")]
+[assembly: Guid("f4c261a0-2a9a-4eca-943d-27d2771423f3")]
 
 // Version information for an assembly consists of the following four values:
 //
