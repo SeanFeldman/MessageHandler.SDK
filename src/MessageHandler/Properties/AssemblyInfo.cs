@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Messagehandler.SDK")]
+[assembly: AssemblyTitle("Messagehandler")]
 [assembly: AssemblyDescription("The messagehandler SDK, which allows you to build your own handlers")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("www.messagehandler.net")]
-[assembly: AssemblyProduct("Messagehandler.SDK")]
+[assembly: AssemblyProduct("Messagehandler")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
