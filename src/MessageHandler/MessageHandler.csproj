@@ -42,6 +42,7 @@
     <Compile Include="IAction.cs" />
     <Compile Include="IChannel.cs" />
     <Compile Include="IConfigurationSource.cs" />
+    <Compile Include="IMessageFilter.cs" />
     <Compile Include="IScriptingEngine.cs" />
     <Compile Include="IStandingQuery.cs" />
     <Compile Include="ITemplatingEngine.cs" />
