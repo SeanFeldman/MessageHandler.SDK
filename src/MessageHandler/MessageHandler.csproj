@@ -44,6 +44,7 @@
     <Compile Include="IConfigurationSource.cs" />
     <Compile Include="IScriptingEngine.cs" />
     <Compile Include="IStandingQuery.cs" />
+    <Compile Include="ITemplatingEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
