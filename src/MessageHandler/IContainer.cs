@@ -5,8 +5,10 @@ namespace MessageHandler
 {
     public interface IContainer
     {
+        void Register<T>();
         void Register<T>(Lifecycle lifecycle);
         void Register<T>(Lifecycle lifecycle, Func<T> factory );
+        void Register(Type type);
         void Register(Type type, Lifecycle lifecycle);
         void Register(Type type, Lifecycle lifecycle, Func<object> factory);
 
