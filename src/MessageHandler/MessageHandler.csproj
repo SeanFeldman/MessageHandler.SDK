@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Channel.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="Handler.cs" />
     <Compile Include="IAction.cs" />
     <Compile Include="IChannel.cs" />
     <Compile Include="IConfigurationSource.cs" />
