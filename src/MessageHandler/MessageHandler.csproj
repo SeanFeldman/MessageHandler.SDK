@@ -42,10 +42,13 @@
     <Compile Include="IAction.cs" />
     <Compile Include="IChannel.cs" />
     <Compile Include="IConfigurationSource.cs" />
+    <Compile Include="IContainer.cs" />
+    <Compile Include="IInitialization.cs" />
     <Compile Include="IMessageFilter.cs" />
     <Compile Include="IScriptingEngine.cs" />
     <Compile Include="IStandingQuery.cs" />
     <Compile Include="ITemplatingEngine.cs" />
+    <Compile Include="Lifecycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
