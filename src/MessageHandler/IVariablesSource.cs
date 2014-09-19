@@ -1,9 +1,11 @@
-﻿namespace MessageHandler
+﻿using System.Threading.Tasks;
+
+namespace MessageHandler
 {
     public interface IVariablesSource
     {
-        dynamic GetChannelVariables(string channelId);
-        dynamic GetAccountVariables(string accountId);
-        dynamic GetEnvironmentVariables(string environmentId);
+        Task<dynamic> GetChannelVariables(string channelId);
+        Task<dynamic> GetAccountVariables(string accountId);
+        Task<dynamic> GetEnvironmentVariables(string environmentId);
     }
 }

@@ -1,7 +1,9 @@
-﻿namespace MessageHandler
+﻿using System.Threading.Tasks;
+
+namespace MessageHandler
 {
     public interface IAction<T>
     {
-        void Action(T t);
+        Task Action(T t);
     }
 }
