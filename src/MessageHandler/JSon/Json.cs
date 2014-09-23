@@ -22,7 +22,7 @@ using System.Web.Script.Serialization;
 // namespace modified to prevent naming colisions
 namespace MessageHandler
 {
-    internal static class Json
+    public static class Json
     {
         private static readonly JavaScriptSerializer _serializer = CreateSerializer();
 
