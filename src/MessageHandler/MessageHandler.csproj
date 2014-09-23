@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +42,10 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Channel.cs" />
+    <Compile Include="JSon\DynamicHelper.cs" />
+    <Compile Include="JSon\DynamicJavaScriptConverter.cs" />
+    <Compile Include="JSon\DynamicJsonArray.cs" />
+    <Compile Include="JSon\DynamicJsonObject.cs" />
     <Compile Include="Environment.cs" />
     <Compile Include="Handler.cs" />
     <Compile Include="IAction.cs" />
@@ -54,6 +59,7 @@
     <Compile Include="IStream.cs" />
     <Compile Include="ITemplatingEngine.cs" />
     <Compile Include="IVariablesSource.cs" />
+    <Compile Include="JSon\Json.cs" />
     <Compile Include="Lifecycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
