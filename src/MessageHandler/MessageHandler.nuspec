@@ -13,6 +13,11 @@
     <copyright>Copyright 2013 Yves Goeleven</copyright>
     <tags>messagehandler</tags>
 	<dependencies>
+	  <dependency id="Rx-Core" version="[2.2.4]" />
+	  <dependency id="Rx-Interfaces" version="[2.2.4]" />
+	  <dependency id="Rx-Linq" version="[2.2.4]" />
+	  <dependency id="Rx-Main" version="[2.2.4]" />
+	  <dependency id="Rx-PlatformServices" version="[2.2.4]" />
     </dependencies>
   </metadata>
 </package>
