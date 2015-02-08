@@ -6,5 +6,8 @@ namespace MessageHandler
     {
         Task Push(object msg);
         Task Push(object msg, string partitionkey);
+
+        Task Push(object[] msg);
+        Task Push(object[] msg, string partitionkey);
     }
 }
