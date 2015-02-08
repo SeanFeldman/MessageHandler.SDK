@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MessageHandler
 {
@@ -7,7 +9,7 @@ namespace MessageHandler
         Task Push(object msg);
         Task Push(object msg, string partitionkey);
 
-        Task Push(object[] msg);
-        Task Push(object[] msg, string partitionkey);
+        Task Push(IEnumerable msg);
+        Task Push(IEnumerable msg, string partitionkey);
     }
 }
