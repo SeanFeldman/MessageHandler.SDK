@@ -43,6 +43,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="Channel.cs" />
     <Compile Include="HandlerConfigurationAttribute.cs" />
+    <Compile Include="IStartupTask.cs" />
     <Compile Include="JSon\DynamicHelper.cs" />
     <Compile Include="JSon\DynamicJavaScriptConverter.cs" />
     <Compile Include="JSon\DynamicJsonArray.cs" />
