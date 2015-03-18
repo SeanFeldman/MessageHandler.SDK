@@ -2,14 +2,9 @@
 
 namespace MessageHandler
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Property)]
     public class OutputSubjectAttribute : Attribute
     {
-        public OutputSubjectAttribute(string name)
-        {
-            Name = name;
-        }
-
-        public string Name { get; set; }
+       
     }
 }
