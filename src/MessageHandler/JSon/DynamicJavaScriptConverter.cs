@@ -56,21 +56,20 @@ namespace MessageHandler
             foreach (string memberName in memberNames)
             {
                 object value = DynamicHelper.GetMemberValue(obj, memberName);
+
                 var jsonValue = value as DynamicJsonArray;
                 if (jsonValue != null)
                 {
                     value = (object[])jsonValue;
                 }
+
                 var s = value as string;
                 if (s != null && IsIso8601DateTimeString(s))
                 {
-                    values[memberName] = DateTime.Parse(s, null, System.Globalization.DateTimeStyles.RoundtripKind); ;
+                    value = DateTime.Parse(s, null, System.Globalization.DateTimeStyles.RoundtripKind); ;
                 }
-                else
-                {
-                    values[memberName] = value;
-                }
-                
+
+                values[memberName] = value;
             }
 
             return values;
