@@ -20,6 +20,7 @@ using System.Diagnostics;
 using System.Dynamic;
 using System.Globalization;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 // namespace modified to prevent naming colisions
 namespace MessageHandler
@@ -102,9 +103,22 @@ namespace MessageHandler
             object result;
             if (_values.TryGetValue(name, out result))
             {
+                var s = result as string;
+                if (s != null && IsIso8601DateTimeString(s))
+                {
+                    result = DateTime.Parse(s, null, System.Globalization.DateTimeStyles.RoundtripKind); ;
+                }
+
                 return result;
             }
             return null;
+        }
+
+        bool IsIso8601DateTimeString(string s)
+        {
+            var regex = new Regex(@"^([\+-]?\d{4}(?!\d{2}\b))((-?)((0[1-9]|1[0-2])(\3([12]\d|0[1-9]|3[01]))?|W([0-4]\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\d|[12]\d{2}|3([0-5]\d|6[1-6])))([T\s]((([01]\d|2[0-3])((:?)[0-5]\d)?|24\:?00)([\.,]\d+(?!:))?)?(\17[0-5]\d([\.,]\d+)?)?([zZ]|([\+-])([01]\d|2[0-3]):?([0-5]\d)?)?)?)?$");
+
+            return regex.IsMatch(s);
         }
     }
 }
