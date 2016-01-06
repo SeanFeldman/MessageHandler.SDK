@@ -20,6 +20,7 @@ using System.Diagnostics;
 using System.Dynamic;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
 
 // namespace modified to prevent naming colisions
@@ -98,6 +99,11 @@ namespace MessageHandler
             return _values.Keys;
         }
 
+        public IDictionary<string, object> ToDictionary()
+        {
+            return _values;
+        }
+
         private object GetValue(string name)
         {
             object result;
@@ -121,4 +127,6 @@ namespace MessageHandler
             return regex.IsMatch(s);
         }
     }
+
 }
+
