@@ -21,7 +21,7 @@ using System.Dynamic;
 using System.Text.RegularExpressions;
 using System.Web.Script.Serialization;
 
-// namespace modified to prevent naming colisions
+// namespace modified to prevent naming collisions
 namespace MessageHandler
 {
     /// <summary>
