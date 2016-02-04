@@ -23,7 +23,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-// namespace modified to prevent naming colisions
+// namespace modified to prevent naming collisions
 namespace MessageHandler
 {
     public class DynamicJsonObject : DynamicObject
