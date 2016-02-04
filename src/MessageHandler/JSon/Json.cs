@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Web.Script.Serialization;
 
-// namespace modified to prevent naming colisions
+// namespace modified to prevent naming collision
 namespace MessageHandler
 {
     public static class Json
