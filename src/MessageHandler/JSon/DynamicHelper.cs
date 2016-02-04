@@ -23,7 +23,7 @@ using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using Microsoft.CSharp.RuntimeBinder;
 
-// namespace modified to prevent naming colisions
+// namespace modified to prevent naming collisions
 namespace MessageHandler
 {
     /// <summary>
